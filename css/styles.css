@@ -1,3 +1,76 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Quattrocento:400,700|Roboto+Slab:400");
+body #main-content .page-title {
+  margin-top: 1em; }
+body #main-content .image-block {
+  padding: 0; }
+  @media screen and (min-width: 992px) {
+    body #main-content .image-block.left::after {
+      content: "";
+      position: absolute;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid #FFFFFF;
+      top: 50%;
+      right: 0; } }
+  @media screen and (min-width: 992px) {
+    body #main-content .image-block.right::after {
+      content: "";
+      position: absolute;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid #FFFFFF;
+      top: 50%;
+      left: 0; } }
+body #main-content .text-block {
+  text-align: center;
+  padding: 1em 2em; }
+  @media screen and (min-width: 768px) {
+    body #main-content .text-block {
+      padding: 2em 4em; } }
+  @media screen and (min-width: 992px) {
+    body #main-content .text-block {
+      padding: 1.5em 2em 1em; } }
+  @media screen and (min-width: 1200px) {
+    body #main-content .text-block {
+      padding: 4em; } }
+body #main-content .row.lp-cards {
+  margin-top: 1em;
+  margin-bottom: 2em; }
+body #main-content .lp-card-container {
+  border: 1px solid #928a81;
+  text-align: center;
+  padding: 0; }
+body #main-content .lp-card-img {
+  height: 14em;
+  background-image: url(https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg);
+  background-position: center;
+  background-size: cover; }
+body #main-content .lp-card-text {
+  padding: 1em; }
+body #main-content .btn {
+  font-family: "Oswald", sans-serif; }
+body #main-content .lp-lg-container {
+  margin: 0 0 1.5em; }
+  body #main-content .lp-lg-container .lp-lg {
+    padding: 0; }
+    body #main-content .lp-lg-container .lp-lg .ui_linked_grid {
+      margin-bottom: 0; }
+      body #main-content .lp-lg-container .lp-lg .ui_linked_grid a:hover .grid_post span {
+        background: #572C86;
+        color: #FFFFFF; }
+      body #main-content .lp-lg-container .lp-lg .ui_linked_grid .tab-container {
+        padding: 0; }
+        body #main-content .lp-lg-container .lp-lg .ui_linked_grid .tab-container .grid_post span {
+          text-align: center;
+          width: 10em;
+          text-shadow: none;
+          background: #FFFFFF;
+          color: #572C86;
+          border: 2px solid #FFFFFF;
+          bottom: auto;
+          left: auto;
+          text-transform: uppercase;
+          font-size: 95%;
+          box-sizing: border-box; }
 
 /*# sourceMappingURL=styles.css.map */

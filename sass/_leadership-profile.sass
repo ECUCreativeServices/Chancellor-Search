@@ -1,0 +1,114 @@
+body
+	#main-content
+		.page-title
+			margin-top: 1em
+		.image-block
+			padding: 0
+			&.left::after
+				@media screen and (min-width: $screen-lg-min)
+					content: ""
+					position: absolute
+					border-top: 10px solid transparent
+					border-bottom: 10px solid transparent
+					border-right: 10px solid $white
+					top: 50%
+					right: 0
+			&.right::after
+				@media screen and (min-width: $screen-lg-min)
+					content: ""
+					position: absolute
+					border-top: 10px solid transparent
+					border-bottom: 10px solid transparent
+					border-left: 10px solid $white
+					top: 50%
+					left: 0
+
+			// img.left
+			// 	position: absolute
+			// 	clip-path: polygon(100% 0, 100% 47%, 98% 50%, 100% 53%, 100% 100%, 0 100%, 0 0)
+			// 	-webkit-clip-path: polygon(100% 0, 100% 47%, 98% 50%, 100% 53%, 100% 100%, 0 100%, 0 0)
+			// img.right
+			// 	position: absolute
+			// 	clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 53%, 2% 50%, 0% 47%, 0 0)
+			// 	-webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 53%, 2% 50%, 0% 47%, 0 0)
+
+			// .arrow-left
+			// 	position: absolute
+			// 	top: 50%
+			// 	transform: translate(0, 50%)
+			// 	-webkit-transform: translate(0, 50%)
+			// 	right: 0
+			// 	width: 0
+			// 	height: 0
+			// 	border-top: 10px solid transparent
+			// 	border-bottom: 10px solid transparent
+			// 	border-right: 10px solid $white
+			// .arrow-right
+			// 	position: absolute
+			// 	top: 50%
+			// 	transform: translate(0, 50%)
+			// 	-webkit-transform: translate(0, 50%)
+			// 	left: 0
+			// 	width: 0
+			// 	height: 0
+			// 	border-top: 10px solid transparent
+			// 	border-bottom: 10px solid transparent
+			// 	border-left: 10px solid $white
+		.text-block
+			text-align: center
+			padding: 1em 2em
+			@media screen and (min-width: $screen-md-min)
+				padding: 2em 4em
+			@media screen and (min-width: $screen-lg-min)
+				padding: 1.5em 2em 1em
+			@media screen and (min-width: $screen-xl-min )
+				padding: 4em
+
+		.row.lp-cards
+			margin-top: 1em
+			margin-bottom: 2em
+
+		.lp-card-container
+			border: 1px solid $gold-grey
+			text-align: center
+			padding: 0
+
+		.lp-card-img
+			height: 14em
+			background-image: url(https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg)
+			background-position: center
+			background-size: cover
+
+		.lp-card-text
+			padding: 1em
+
+		.btn
+			font-family: $heading-font
+
+		.lp-lg-container
+			margin: 0 0 1.5em
+			.lp-lg
+				padding: 0
+				.ui_linked_grid
+					margin-bottom: 0
+					a:hover
+						.grid_post
+							span
+								background: $ecu-purple
+								color: $white
+
+					.tab-container
+						padding: 0
+						.grid_post
+							span
+								text-align: center
+								width: 10em
+								text-shadow: none
+								background: $white
+								color: $ecu-purple
+								border: 2px solid $white
+								bottom: auto
+								left: auto
+								text-transform: uppercase
+								font-size: 95%
+								box-sizing: border-box
