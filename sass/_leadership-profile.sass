@@ -1,114 +1,267 @@
 body
+
 	#main-content
-		.page-title
+
+		.container
 			margin-top: 1em
-		.image-block
-			padding: 0
-			&.left::after
-				@media screen and (min-width: $screen-lg-min)
-					content: ""
-					position: absolute
-					border-top: 10px solid transparent
-					border-bottom: 10px solid transparent
-					border-right: 10px solid $white
-					top: 50%
-					right: 0
-			&.right::after
-				@media screen and (min-width: $screen-lg-min)
-					content: ""
-					position: absolute
-					border-top: 10px solid transparent
-					border-bottom: 10px solid transparent
-					border-left: 10px solid $white
-					top: 50%
-					left: 0
 
-			// img.left
-			// 	position: absolute
-			// 	clip-path: polygon(100% 0, 100% 47%, 98% 50%, 100% 53%, 100% 100%, 0 100%, 0 0)
-			// 	-webkit-clip-path: polygon(100% 0, 100% 47%, 98% 50%, 100% 53%, 100% 100%, 0 100%, 0 0)
-			// img.right
-			// 	position: absolute
-			// 	clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 53%, 2% 50%, 0% 47%, 0 0)
-			// 	-webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 53%, 2% 50%, 0% 47%, 0 0)
+		.btn
+			font-family: $heading-font
+		.btn.btn-ribbon.lp
+			margin-bottom: 0
+			padding: 8px 12px
 
-			// .arrow-left
-			// 	position: absolute
-			// 	top: 50%
-			// 	transform: translate(0, 50%)
-			// 	-webkit-transform: translate(0, 50%)
-			// 	right: 0
-			// 	width: 0
-			// 	height: 0
-			// 	border-top: 10px solid transparent
-			// 	border-bottom: 10px solid transparent
-			// 	border-right: 10px solid $white
-			// .arrow-right
-			// 	position: absolute
-			// 	top: 50%
-			// 	transform: translate(0, 50%)
-			// 	-webkit-transform: translate(0, 50%)
-			// 	left: 0
-			// 	width: 0
-			// 	height: 0
-			// 	border-top: 10px solid transparent
-			// 	border-bottom: 10px solid transparent
-			// 	border-left: 10px solid $white
-		.text-block
-			text-align: center
-			padding: 1em 2em
-			@media screen and (min-width: $screen-md-min)
-				padding: 2em 4em
-			@media screen and (min-width: $screen-lg-min)
-				padding: 1.5em 2em 1em
-			@media screen and (min-width: $screen-xl-min )
-				padding: 4em
+		.lp-section-head
+			text-transform: uppercase
+			padding: 10px
+			color: $white
+			background-color: $ecu-hot-pink
+			font-family: $arvo-heading
+
+		.intro
+			font-size: 1.25rem
+			line-height: 1.75rem
+
+		.sidebar
+			margin-bottom: 1em
+			.dashboard-wrapper
+				.row.item-row
+					margin: 0
+					flex-direction: column
+					.dashboard-item.col-12.col-sm-6.col-lg-4
+						flex: 0 0 100%
+						max-width: 100%
+						padding: 0
+						margin-bottom: 0
+						a
+							.icon-wrapper.item.ecu-purple.link-wrap
+								justify-content: flex-start
+								&:hover
+									background-color: $ecu-purple
+								span
+									display: none
+								p.ecu-h2
+									font-size: 1em !important
+									font-family: $heading-font
+									line-height: auto
+									padding: 0
+									margin: 0
+
+		.lp-blocks
+			margin: 0
+			.image-block
+				padding: 0
+				&.left, &.right
+					background-position: center
+					background-size: cover
+					min-height: 18em
+				&.left::after
+					@media screen and (min-width: $screen-lg-min)
+						content: ""
+						position: absolute
+						border-top: 10px solid transparent
+						border-bottom: 10px solid transparent
+						border-right: 10px solid $white
+						top: 50%
+						right: 0
+				&.right::after
+					@media screen and (min-width: $screen-lg-min)
+						content: ""
+						position: absolute
+						border-top: 10px solid transparent
+						border-bottom: 10px solid transparent
+						border-left: 10px solid $white
+						top: 50%
+						left: 0
+			#mission
+				background-image: url($mission-image)
+			#story
+				background-image: url($story-image)
+			#campus
+				background-image: url($campus-image)
+			#home
+				background-image: url($home-image)
+			.text-block
+				text-align: center
+				padding: 1em 2em
+				@media screen and (min-width: $screen-md-min)
+					padding: 2em 4em
+				@media screen and (min-width: $screen-lg-min)
+					padding: 1.5em 2em 1em
+				@media screen and (min-width: $screen-xl-min )
+					padding: 4em
 
 		.row.lp-cards
 			margin-top: 1em
 			margin-bottom: 2em
-
-		.lp-card-container
-			border: 1px solid $gold-grey
-			text-align: center
-			padding: 0
-
-		.lp-card-img
-			height: 14em
-			background-image: url(https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg)
-			background-position: center
-			background-size: cover
-
-		.lp-card-text
-			padding: 1em
-
-		.btn
-			font-family: $heading-font
+			.lp-card-container
+				border: 1px solid $gold-grey
+				text-align: center
+				padding: 0
+				margin-bottom: 1em
+				.lp-card-img
+					height: 14em
+					background-image: url(https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg)
+					background-position: center
+					background-size: cover
+				.lp-card-text
+					padding: 1em
 
 		.lp-lg-container
-			margin: 0 0 1.5em
+			margin: 0
 			.lp-lg
 				padding: 0
-				.ui_linked_grid
+				@media screen and (min-width: $screen-md-min)
+					border-right: 1px solid $white
+					&:nth-child(even)
+						border-right: none
+					&:first-child, &:nth-child(2)
+						border-bottom: 1px solid $white
+				@media screen and (min-width: $screen-lg-min)
+					&:nth-child(1n)
+						border-bottom: none
+					&:nth-child(2)
+						border-right: 1px solid $white
+				&.active
+					.ui_linked_grid.ui_tabbed_grid
+						.tab-content.ui_tabbed_grid_tabs
+							.tab-pane.active
+								.row
+									a
+										.tab-container
+											.grid_post
+												&.medium
+													cursor: default
+													span
+														background-color: $ecu-purple
+														color: $white
+														border-top: 1px solid $white
+														border-bottom: 1px solid $white
+														@media screen and (min-width: $screen-md-min)
+															border: 1px solid $white
+				.ui_linked_grid.ui_tabbed_grid
 					margin-bottom: 0
-					a:hover
-						.grid_post
-							span
-								background: $ecu-purple
-								color: $white
-
-					.tab-container
-						padding: 0
-						.grid_post
-							span
-								text-align: center
-								width: 10em
-								text-shadow: none
-								background: $white
-								color: $ecu-purple
-								border: 2px solid $white
-								bottom: auto
-								left: auto
-								text-transform: uppercase
-								font-size: 95%
-								box-sizing: border-box
+					.tab-content.ui_tabbed_grid_tabs
+						.tab-pane.active
+							.row
+								margin: 0
+								a
+									&:hover
+										.tab-container
+											.grid_post
+												span
+													background: $ecu-purple
+													color: $white
+													border-top: 1px solid $white
+													border-bottom: 1px solid $white
+													@media screen and (min-width: $screen-md-min)
+														border: 1px solid $white
+									.tab-container
+										padding: 0
+										.grid_post
+											transition: background-image 0.5s
+											-moz-transition: background-image 0.5s
+											span
+												text-align: center
+												width: 100%
+												border: 1px solid $ecu-purple
+												text-shadow: none
+												background: $white
+												color: $ecu-purple
+												bottom: auto
+												left: auto
+												text-transform: uppercase
+												font-size: 95%
+												font-weight: 700
+												box-sizing: border-box
+												@media screen and (min-width: $screen-md-min)
+													width: 10em
+													padding: 8px 12px
+													bottom: 1em
+													background: rgba(255,255,255,0.85)
+											&.medium
+												height: 54px
+												@media screen and (min-width: $screen-md-min)
+													height: 200px
+												@media screen and (min-width: $screen-lg-min)
+													height: 300px
+			#mission-lg
+				.ui_linked_grid.ui_tabbed_grid
+					.tab-content.ui_tabbed_grid_tabs
+						.tab-pane.active
+							.row
+								a
+									.tab-container
+										.grid_post
+											&.medium
+												+image-trans($mission-image-grey, $mission-image)
+				&.active
+					.ui_linked_grid.ui_tabbed_grid
+						.tab-content.ui_tabbed_grid_tabs
+							.tab-pane.active
+								.row
+									a
+										.tab-container
+											.grid_post
+												&.medium
+													background-image: url($mission-image) !important
+			#story-lg
+				.ui_linked_grid.ui_tabbed_grid
+					.tab-content.ui_tabbed_grid_tabs
+						.tab-pane.active
+							.row
+								a
+									.tab-container
+										.grid_post
+											&.medium:hover
+												background-image: url($story-image) !important
+				&.active
+					.ui_linked_grid.ui_tabbed_grid
+						.tab-content.ui_tabbed_grid_tabs
+							.tab-pane.active
+								.row
+									a
+										.tab-container
+											.grid_post
+												&.medium
+													background-image: url($story-image) !important
+			#campus-lg
+				.ui_linked_grid.ui_tabbed_grid
+					.tab-content.ui_tabbed_grid_tabs
+						.tab-pane.active
+							.row
+								a
+									.tab-container
+										.grid_post
+											&.medium:hover
+												background-image: url($campus-image) !important
+				&.active
+					.ui_linked_grid.ui_tabbed_grid
+						.tab-content.ui_tabbed_grid_tabs
+							.tab-pane.active
+								.row
+									a
+										.tab-container
+											.grid_post
+												&.medium
+													background-image: url($campus-image) !important
+			#home-lg
+				.ui_linked_grid.ui_tabbed_grid
+					.tab-content.ui_tabbed_grid_tabs
+						.tab-pane.active
+							.row
+								a
+									.tab-container
+										.grid_post
+											&.medium:hover
+												background-image: url($home-image) !important
+				&.active
+					.ui_linked_grid.ui_tabbed_grid
+						.tab-content.ui_tabbed_grid_tabs
+							.tab-pane.active
+								.row
+									a
+										.tab-container
+											.grid_post
+												&.medium
+													background-image: url($home-image) !important

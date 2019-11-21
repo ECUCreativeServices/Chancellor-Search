@@ -1,76 +1,198 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Quattrocento:400,700|Roboto+Slab:400");
-body #main-content .page-title {
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i&display=swap");
+body #main-content .container {
   margin-top: 1em; }
-body #main-content .image-block {
-  padding: 0; }
-  @media screen and (min-width: 992px) {
-    body #main-content .image-block.left::after {
-      content: "";
-      position: absolute;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-right: 10px solid #FFFFFF;
-      top: 50%;
-      right: 0; } }
-  @media screen and (min-width: 992px) {
-    body #main-content .image-block.right::after {
-      content: "";
-      position: absolute;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-left: 10px solid #FFFFFF;
-      top: 50%;
-      left: 0; } }
-body #main-content .text-block {
-  text-align: center;
-  padding: 1em 2em; }
-  @media screen and (min-width: 768px) {
-    body #main-content .text-block {
-      padding: 2em 4em; } }
-  @media screen and (min-width: 992px) {
-    body #main-content .text-block {
-      padding: 1.5em 2em 1em; } }
-  @media screen and (min-width: 1200px) {
-    body #main-content .text-block {
-      padding: 4em; } }
+body #main-content .btn {
+  font-family: "Oswald", sans-serif; }
+body #main-content .btn.btn-ribbon.lp {
+  margin-bottom: 0;
+  padding: 8px 12px; }
+body #main-content .lp-section-head {
+  text-transform: uppercase;
+  padding: 10px;
+  color: #FFFFFF;
+  background-color: #77216F;
+  font-family: "Arvo", sans-serif; }
+body #main-content .intro {
+  font-size: 1.25rem;
+  line-height: 1.75rem; }
+body #main-content .sidebar {
+  margin-bottom: 1em; }
+  body #main-content .sidebar .dashboard-wrapper .row.item-row {
+    margin: 0;
+    flex-direction: column; }
+    body #main-content .sidebar .dashboard-wrapper .row.item-row .dashboard-item.col-12.col-sm-6.col-lg-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 0; }
+      body #main-content .sidebar .dashboard-wrapper .row.item-row .dashboard-item.col-12.col-sm-6.col-lg-4 a .icon-wrapper.item.ecu-purple.link-wrap {
+        justify-content: flex-start; }
+        body #main-content .sidebar .dashboard-wrapper .row.item-row .dashboard-item.col-12.col-sm-6.col-lg-4 a .icon-wrapper.item.ecu-purple.link-wrap:hover {
+          background-color: #572C86; }
+        body #main-content .sidebar .dashboard-wrapper .row.item-row .dashboard-item.col-12.col-sm-6.col-lg-4 a .icon-wrapper.item.ecu-purple.link-wrap span {
+          display: none; }
+        body #main-content .sidebar .dashboard-wrapper .row.item-row .dashboard-item.col-12.col-sm-6.col-lg-4 a .icon-wrapper.item.ecu-purple.link-wrap p.ecu-h2 {
+          font-size: 1em !important;
+          font-family: "Oswald", sans-serif;
+          line-height: auto;
+          padding: 0;
+          margin: 0; }
+body #main-content .lp-blocks {
+  margin: 0; }
+  body #main-content .lp-blocks .image-block {
+    padding: 0; }
+    body #main-content .lp-blocks .image-block.left, body #main-content .lp-blocks .image-block.right {
+      background-position: center;
+      background-size: cover;
+      min-height: 18em; }
+    @media screen and (min-width: 992px) {
+      body #main-content .lp-blocks .image-block.left::after {
+        content: "";
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #FFFFFF;
+        top: 50%;
+        right: 0; } }
+    @media screen and (min-width: 992px) {
+      body #main-content .lp-blocks .image-block.right::after {
+        content: "";
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #FFFFFF;
+        top: 50%;
+        left: 0; } }
+  body #main-content .lp-blocks #mission {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg"); }
+  body #main-content .lp-blocks #story {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image3a.jpg"); }
+  body #main-content .lp-blocks #campus {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image2.jpg"); }
+  body #main-content .lp-blocks #home {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image4.jpg"); }
+  body #main-content .lp-blocks .text-block {
+    text-align: center;
+    padding: 1em 2em; }
+    @media screen and (min-width: 768px) {
+      body #main-content .lp-blocks .text-block {
+        padding: 2em 4em; } }
+    @media screen and (min-width: 992px) {
+      body #main-content .lp-blocks .text-block {
+        padding: 1.5em 2em 1em; } }
+    @media screen and (min-width: 1200px) {
+      body #main-content .lp-blocks .text-block {
+        padding: 4em; } }
 body #main-content .row.lp-cards {
   margin-top: 1em;
   margin-bottom: 2em; }
-body #main-content .lp-card-container {
-  border: 1px solid #928a81;
-  text-align: center;
-  padding: 0; }
-body #main-content .lp-card-img {
-  height: 14em;
-  background-image: url(https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg);
-  background-position: center;
-  background-size: cover; }
-body #main-content .lp-card-text {
-  padding: 1em; }
-body #main-content .btn {
-  font-family: "Oswald", sans-serif; }
+  body #main-content .row.lp-cards .lp-card-container {
+    border: 1px solid #928a81;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1em; }
+    body #main-content .row.lp-cards .lp-card-container .lp-card-img {
+      height: 14em;
+      background-image: url(https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg);
+      background-position: center;
+      background-size: cover; }
+    body #main-content .row.lp-cards .lp-card-container .lp-card-text {
+      padding: 1em; }
 body #main-content .lp-lg-container {
-  margin: 0 0 1.5em; }
+  margin: 0; }
   body #main-content .lp-lg-container .lp-lg {
     padding: 0; }
-    body #main-content .lp-lg-container .lp-lg .ui_linked_grid {
+    @media screen and (min-width: 768px) {
+      body #main-content .lp-lg-container .lp-lg {
+        border-right: 1px solid #FFFFFF; }
+        body #main-content .lp-lg-container .lp-lg:nth-child(even) {
+          border-right: none; }
+        body #main-content .lp-lg-container .lp-lg:first-child, body #main-content .lp-lg-container .lp-lg:nth-child(2) {
+          border-bottom: 1px solid #FFFFFF; } }
+    @media screen and (min-width: 992px) {
+      body #main-content .lp-lg-container .lp-lg:nth-child(1n) {
+        border-bottom: none; }
+      body #main-content .lp-lg-container .lp-lg:nth-child(2) {
+        border-right: 1px solid #FFFFFF; } }
+    body #main-content .lp-lg-container .lp-lg.active .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
+      cursor: default; }
+      body #main-content .lp-lg-container .lp-lg.active .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium span {
+        background-color: #572C86;
+        color: #FFFFFF;
+        border-top: 1px solid #FFFFFF;
+        border-bottom: 1px solid #FFFFFF; }
+        @media screen and (min-width: 768px) {
+          body #main-content .lp-lg-container .lp-lg.active .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium span {
+            border: 1px solid #FFFFFF; } }
+    body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid {
       margin-bottom: 0; }
-      body #main-content .lp-lg-container .lp-lg .ui_linked_grid a:hover .grid_post span {
-        background: #572C86;
-        color: #FFFFFF; }
-      body #main-content .lp-lg-container .lp-lg .ui_linked_grid .tab-container {
-        padding: 0; }
-        body #main-content .lp-lg-container .lp-lg .ui_linked_grid .tab-container .grid_post span {
-          text-align: center;
-          width: 10em;
-          text-shadow: none;
-          background: #FFFFFF;
-          color: #572C86;
-          border: 2px solid #FFFFFF;
-          bottom: auto;
-          left: auto;
-          text-transform: uppercase;
-          font-size: 95%;
-          box-sizing: border-box; }
+      body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row {
+        margin: 0; }
+        body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a:hover .tab-container .grid_post span {
+          background: #572C86;
+          color: #FFFFFF;
+          border-top: 1px solid #FFFFFF;
+          border-bottom: 1px solid #FFFFFF; }
+          @media screen and (min-width: 768px) {
+            body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a:hover .tab-container .grid_post span {
+              border: 1px solid #FFFFFF; } }
+        body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container {
+          padding: 0; }
+          body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post {
+            transition: background-image 0.5s;
+            -moz-transition: background-image 0.5s; }
+            body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post span {
+              text-align: center;
+              width: 100%;
+              border: 1px solid #572C86;
+              text-shadow: none;
+              background: #FFFFFF;
+              color: #572C86;
+              bottom: auto;
+              left: auto;
+              text-transform: uppercase;
+              font-size: 95%;
+              font-weight: 700;
+              box-sizing: border-box; }
+              @media screen and (min-width: 768px) {
+                body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post span {
+                  width: 10em;
+                  padding: 8px 12px;
+                  bottom: 1em;
+                  background: rgba(255, 255, 255, 0.85); } }
+            body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
+              height: 54px; }
+              @media screen and (min-width: 768px) {
+                body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
+                  height: 200px; } }
+              @media screen and (min-width: 992px) {
+                body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
+                  height: 300px; } }
+  body #main-content .lp-lg-container #mission-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1-overlay.jpg"); }
+    body #main-content .lp-lg-container #mission-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium:hover {
+      animation: image 1s;
+      animation-iteration-count: 1;
+      background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg"); }
+@keyframes image {
+  0% {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1-overlay.jpg"); }
+  100% {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg"); } }
+  body #main-content .lp-lg-container #mission-lg.active .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg") !important; }
+  body #main-content .lp-lg-container #story-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium:hover {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image3a.jpg") !important; }
+  body #main-content .lp-lg-container #story-lg.active .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image3a.jpg") !important; }
+  body #main-content .lp-lg-container #campus-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium:hover {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image2.jpg") !important; }
+  body #main-content .lp-lg-container #campus-lg.active .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image2.jpg") !important; }
+  body #main-content .lp-lg-container #home-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium:hover {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image4.jpg") !important; }
+  body #main-content .lp-lg-container #home-lg.active .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image4.jpg") !important; }
 
 /*# sourceMappingURL=styles.css.map */

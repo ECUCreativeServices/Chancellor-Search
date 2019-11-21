@@ -1,0 +1,13 @@
+=image-trans($image-grey, $image-color)
+	background-image: url($image-grey)
+	&:hover
+		animation: image 1s
+		animation-iteration-count: 1
+		background-image: url($image-color)
+
+	@keyframes image
+		0%
+			background-image: url($image-grey)
+
+		100%
+			background-image: url($image-color)
