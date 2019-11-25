@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Quattrocento:400,700|Roboto+Slab:400");
 @import url("https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i&display=swap");
 body #main-content .container {
-  margin-top: 1em; }
+  margin-top: 1.5rem;
+  margin-bottom: 1rem; }
 body #main-content .btn {
   font-family: "Oswald", sans-serif; }
 body #main-content .btn.btn-ribbon.lp {
@@ -16,6 +17,8 @@ body #main-content .lp-section-head {
 body #main-content .intro {
   font-size: 1.25rem;
   line-height: 1.75rem; }
+body #main-content ul.committee li {
+  padding-bottom: 0.5em; }
 body #main-content .sidebar {
   margin-bottom: 1em; }
   body #main-content .sidebar .dashboard-wrapper .row.item-row {
@@ -38,6 +41,10 @@ body #main-content .sidebar {
           line-height: auto;
           padding: 0;
           margin: 0; }
+
+body #main-content .blocks-container {
+  margin-top: 0;
+  margin-bottom: 0; }
 body #main-content .lp-blocks {
   margin: 0; }
   body #main-content .lp-blocks .image-block {
@@ -169,17 +176,8 @@ body #main-content .lp-lg-container {
               @media screen and (min-width: 992px) {
                 body #main-content .lp-lg-container .lp-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
                   height: 300px; } }
-  body #main-content .lp-lg-container #mission-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
-    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1-overlay.jpg"); }
-    body #main-content .lp-lg-container #mission-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium:hover {
-      animation: image 1s;
-      animation-iteration-count: 1;
-      background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg"); }
-@keyframes image {
-  0% {
-    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1-overlay.jpg"); }
-  100% {
-    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg"); } }
+  body #main-content .lp-lg-container #mission-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium:hover {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg") !important; }
   body #main-content .lp-lg-container #mission-lg.active .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium {
     background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg") !important; }
   body #main-content .lp-lg-container #story-lg .ui_linked_grid.ui_tabbed_grid .tab-content.ui_tabbed_grid_tabs .tab-pane.active .row a .tab-container .grid_post.medium:hover {
