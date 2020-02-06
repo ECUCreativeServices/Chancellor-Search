@@ -1,0 +1,80 @@
+// SIDEBAR NAV STYLES
+
+// body
+// 	#main-content
+// 		.sidebar-sticky
+// 			@media screen and (min-width: $screen-md-min)
+// 				position: sticky
+// 				top: 127px
+// 				z-index: 1019
+// 			@media screen and (min-width: $screen-lg-min)
+// 				top: 163px
+// 			@media screen and (min-width: $screen-xl-min)
+// 				top: 139px
+// 		#lp-menu
+// 			margin-bottom: 0
+// 			@media screen and (min-width: $screen-md-min)
+// 				margin-bottom: 0.5em
+// 			.dashboard-wrapper
+// 				.dashboard-item
+// 					.item.ecu-purple
+// 						background-color: $ecu-purple
+// 						margin-bottom: 0
+// 						margin-top: 0
+// 						padding: 5px 15px
+// 						.ecu-h2
+// 							color: $white !important
+// 						&:hover
+// 							background-color: $white
+// 							.ecu-h2
+// 								color: $ecu-purple !important
+
+// NAVBAR NAV STYLES
+
+body
+	#main-content
+		#lp-nav
+			display: flex
+			align-items: center
+			@media screen and (min-width: $screen-md-min)
+				background-color: $ecu-purple
+				position: sticky
+				top: 117px
+				z-index: 1019
+			@media screen and (min-width: $screen-lg-min)
+				top: 153px
+			@media screen and (min-width: $screen-xl-min)
+				top: 129px
+			.container
+				margin: 0 auto
+				ul
+					margin: 0
+					padding: 0
+					display: flex
+					flex-direction: column
+					list-style: none
+					background-color: $ecu-purple
+					margin-top: 1.5em
+					@media screen and (min-width: $screen-md-min)
+						background-color: none
+						flex-direction: row
+						flex-wrap: wrap
+						margin-top: 0
+					li
+						border-bottom: 1px solid rgba(0,0,0,0.2)
+						box-shadow: 0 1px 5px rgba(0,0,0,0.15)
+						@media screen and (min-width: $screen-md-min)
+							border-bottom: none
+							box-shadow: none
+						a
+							color: $white
+							font-family: $heading-font
+							transition: color 0.2s
+							font-size: 1rem
+							border: 0 !important
+							padding: 10px 15px
+							display: block
+							@media screen and (min-width: $screen-md-min)
+								padding: 17px 16px
+							&:hover
+								background-color: $dark-purple

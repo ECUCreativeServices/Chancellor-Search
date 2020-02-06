@@ -28,7 +28,11 @@ body
 				padding-bottom: 0.5em
 
 		.sidebar
-			margin-bottom: 1em
+			margin-bottom: .75em
+			margin-top: 0.5em
+			@media screen and (min-width: $screen-md-min)
+				margin-top: 0
+				margin-bottom: 1.5em
 			.dashboard-wrapper
 				.row.item-row
 					margin: 0
@@ -38,6 +42,12 @@ body
 						max-width: 100%
 						padding: 0
 						margin-bottom: 0
+						.item
+							margin: 0
+							padding: 5px 15px
+							@media screen and (min-width: $screen-md-min)
+								margin: 5px
+								padding: 15px
 						a
 							.icon-wrapper.item.ecu-purple.link-wrap
 								justify-content: flex-start

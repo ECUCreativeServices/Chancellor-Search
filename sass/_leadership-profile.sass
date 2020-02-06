@@ -32,14 +32,21 @@ body
 						border-left: 10px solid $white
 						top: 50%
 						left: 0
-			#mission
-				background-image: url($mission-image)
 			#story
 				background-image: url($story-image)
-			#campus
-				background-image: url($campus-image)
-			#home
-				background-image: url($home-image)
+			#coastal
+				background-image: url($coastal-image)
+			#academics
+				background-image: url($academics-image)
+			#innovation
+				background-image: url($innovation-image)
+			#student-exp
+				background-image: url($student-exp-image)
+			#athletics
+				background-image: url($athletics-image)
+			#chancellor
+				background-image: url($chancellor-image)
+
 			.text-block
 				text-align: center
 				padding: 1em 2em
@@ -50,177 +57,179 @@ body
 				@media screen and (min-width: $screen-xl-min )
 					padding: 4em
 
-		.row.lp-cards
-			margin-top: 1em
-			margin-bottom: 2em
-			.lp-card-container
-				border: 1px solid $gold-grey
-				text-align: center
-				padding: 0
-				margin-bottom: 1em
-				.lp-card-img
-					height: 14em
-					background-image: url(https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg)
-					background-position: center
-					background-size: cover
-				.lp-card-text
-					padding: 1em
+/* STYLES FOR IMAGE BLOCK NAV */
 
-		.lp-lg-container
-			margin: 0
-			.lp-lg
-				padding: 0
-				@media screen and (min-width: $screen-md-min)
-					border-right: 1px solid $white
-					&:nth-child(even)
-						border-right: none
-					&:first-child, &:nth-child(2)
-						border-bottom: 1px solid $white
-				@media screen and (min-width: $screen-lg-min)
-					&:nth-child(1n)
-						border-bottom: none
-					&:nth-child(2)
-						border-right: 1px solid $white
-				&.active
-					.ui_linked_grid.ui_tabbed_grid
-						.tab-content.ui_tabbed_grid_tabs
-							.tab-pane.active
-								.row
-									a
-										.tab-container
-											.grid_post
-												&.medium
-													cursor: default
-													span
-														background-color: $ecu-purple
-														color: $white
-														border-top: 1px solid $white
-														border-bottom: 1px solid $white
-														@media screen and (min-width: $screen-md-min)
-															border: 1px solid $white
-				.ui_linked_grid.ui_tabbed_grid
-					margin-bottom: 0
-					.tab-content.ui_tabbed_grid_tabs
-						.tab-pane.active
-							.row
-								margin: 0
-								a
-									&:hover
-										.tab-container
-											.grid_post
-												span
-													background: $ecu-purple
-													color: $white
-													border-top: 1px solid $white
-													border-bottom: 1px solid $white
-													@media screen and (min-width: $screen-md-min)
-														border: 1px solid $white
-									.tab-container
-										padding: 0
-										.grid_post
-											transition: background-image 0.5s
-											-moz-transition: background-image 0.5s
-											span
-												text-align: center
-												width: 100%
-												border: 1px solid $ecu-purple
-												text-shadow: none
-												background: $white
-												color: $ecu-purple
-												bottom: auto
-												left: auto
-												text-transform: uppercase
-												font-size: 95%
-												font-weight: 700
-												box-sizing: border-box
-												@media screen and (min-width: $screen-md-min)
-													width: 10em
-													padding: 8px 12px
-													bottom: 1em
-													background: rgba(255,255,255,0.85)
-											&.medium
-												height: 54px
-												@media screen and (min-width: $screen-md-min)
-													height: 200px
-												@media screen and (min-width: $screen-lg-min)
-													height: 300px
-			#mission-lg
-				.ui_linked_grid.ui_tabbed_grid
-					.tab-content.ui_tabbed_grid_tabs
-						.tab-pane.active
-							.row
-								a
-									.tab-container
-										.grid_post
-											&.medium:hover
-												background-image: url($mission-image) !important
-				&.active
-					.ui_linked_grid.ui_tabbed_grid
-						.tab-content.ui_tabbed_grid_tabs
-							.tab-pane.active
-								.row
-									a
-										.tab-container
-											.grid_post
-												&.medium
-													background-image: url($mission-image) !important
-			#story-lg
-				.ui_linked_grid.ui_tabbed_grid
-					.tab-content.ui_tabbed_grid_tabs
-						.tab-pane.active
-							.row
-								a
-									.tab-container
-										.grid_post
-											&.medium:hover
-												background-image: url($story-image) !important
-				&.active
-					.ui_linked_grid.ui_tabbed_grid
-						.tab-content.ui_tabbed_grid_tabs
-							.tab-pane.active
-								.row
-									a
-										.tab-container
-											.grid_post
-												&.medium
-													background-image: url($story-image) !important
-			#campus-lg
-				.ui_linked_grid.ui_tabbed_grid
-					.tab-content.ui_tabbed_grid_tabs
-						.tab-pane.active
-							.row
-								a
-									.tab-container
-										.grid_post
-											&.medium:hover
-												background-image: url($campus-image) !important
-				&.active
-					.ui_linked_grid.ui_tabbed_grid
-						.tab-content.ui_tabbed_grid_tabs
-							.tab-pane.active
-								.row
-									a
-										.tab-container
-											.grid_post
-												&.medium
-													background-image: url($campus-image) !important
-			#home-lg
-				.ui_linked_grid.ui_tabbed_grid
-					.tab-content.ui_tabbed_grid_tabs
-						.tab-pane.active
-							.row
-								a
-									.tab-container
-										.grid_post
-											&.medium:hover
-												background-image: url($home-image) !important
-				&.active
-					.ui_linked_grid.ui_tabbed_grid
-						.tab-content.ui_tabbed_grid_tabs
-							.tab-pane.active
-								.row
-									a
-										.tab-container
-											.grid_post
-												&.medium
-													background-image: url($home-image) !important
+		// .row.lp-cards
+		// 	margin-top: 1em
+		// 	margin-bottom: 2em
+		// 	.lp-card-container
+		// 		border: 1px solid $gold-grey
+		// 		text-align: center
+		// 		padding: 0
+		// 		margin-bottom: 1em
+		// 		.lp-card-img
+		// 			height: 14em
+		// 			background-image: url(https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2019/11/image1.jpg)
+		// 			background-position: center
+		// 			background-size: cover
+		// 		.lp-card-text
+		// 			padding: 1em
+		//
+		// .lp-lg-container
+		// 	margin: 0
+		// 	.lp-lg
+		// 		padding: 0
+		// 		@media screen and (min-width: $screen-md-min)
+		// 			border-right: 1px solid $white
+		// 			&:nth-child(even)
+		// 				border-right: none
+		// 			&:first-child, &:nth-child(2)
+		// 				border-bottom: 1px solid $white
+		// 		@media screen and (min-width: $screen-lg-min)
+		// 			&:nth-child(1n)
+		// 				border-bottom: none
+		// 			&:nth-child(2)
+		// 				border-right: 1px solid $white
+		// 		&.active
+		// 			.ui_linked_grid.ui_tabbed_grid
+		// 				.tab-content.ui_tabbed_grid_tabs
+		// 					.tab-pane.active
+		// 						.row
+		// 							a
+		// 								.tab-container
+		// 									.grid_post
+		// 										&.medium
+		// 											cursor: default
+		// 											span
+		// 												background-color: $ecu-purple
+		// 												color: $white
+		// 												border-top: 1px solid $white
+		// 												border-bottom: 1px solid $white
+		// 												@media screen and (min-width: $screen-md-min)
+		// 													border: 1px solid $white
+		// 		.ui_linked_grid.ui_tabbed_grid
+		// 			margin-bottom: 0
+		// 			.tab-content.ui_tabbed_grid_tabs
+		// 				.tab-pane.active
+		// 					.row
+		// 						margin: 0
+		// 						a
+		// 							&:hover
+		// 								.tab-container
+		// 									.grid_post
+		// 										span
+		// 											background: $ecu-purple
+		// 											color: $white
+		// 											border-top: 1px solid $white
+		// 											border-bottom: 1px solid $white
+		// 											@media screen and (min-width: $screen-md-min)
+		// 												border: 1px solid $white
+		// 							.tab-container
+		// 								padding: 0
+		// 								.grid_post
+		// 									transition: background-image 0.5s
+		// 									-moz-transition: background-image 0.5s
+		// 									span
+		// 										text-align: center
+		// 										width: 100%
+		// 										border: 1px solid $ecu-purple
+		// 										text-shadow: none
+		// 										background: $white
+		// 										color: $ecu-purple
+		// 										bottom: auto
+		// 										left: auto
+		// 										text-transform: uppercase
+		// 										font-size: 95%
+		// 										font-weight: 700
+		// 										box-sizing: border-box
+		// 										@media screen and (min-width: $screen-md-min)
+		// 											width: 10em
+		// 											padding: 8px 12px
+		// 											bottom: 1em
+		// 											background: rgba(255,255,255,0.85)
+		// 									&.medium
+		// 										height: 54px
+		// 										@media screen and (min-width: $screen-md-min)
+		// 											height: 200px
+		// 										@media screen and (min-width: $screen-lg-min)
+		// 											height: 300px
+		// 	#mission-lg
+		// 		.ui_linked_grid.ui_tabbed_grid
+		// 			.tab-content.ui_tabbed_grid_tabs
+		// 				.tab-pane.active
+		// 					.row
+		// 						a
+		// 							.tab-container
+		// 								.grid_post
+		// 									&.medium:hover
+		// 										background-image: url($mission-image) !important
+		// 		&.active
+		// 			.ui_linked_grid.ui_tabbed_grid
+		// 				.tab-content.ui_tabbed_grid_tabs
+		// 					.tab-pane.active
+		// 						.row
+		// 							a
+		// 								.tab-container
+		// 									.grid_post
+		// 										&.medium
+		// 											background-image: url($mission-image) !important
+		// 	#story-lg
+		// 		.ui_linked_grid.ui_tabbed_grid
+		// 			.tab-content.ui_tabbed_grid_tabs
+		// 				.tab-pane.active
+		// 					.row
+		// 						a
+		// 							.tab-container
+		// 								.grid_post
+		// 									&.medium:hover
+		// 										background-image: url($story-image) !important
+		// 		&.active
+		// 			.ui_linked_grid.ui_tabbed_grid
+		// 				.tab-content.ui_tabbed_grid_tabs
+		// 					.tab-pane.active
+		// 						.row
+		// 							a
+		// 								.tab-container
+		// 									.grid_post
+		// 										&.medium
+		// 											background-image: url($story-image) !important
+		// 	#campus-lg
+		// 		.ui_linked_grid.ui_tabbed_grid
+		// 			.tab-content.ui_tabbed_grid_tabs
+		// 				.tab-pane.active
+		// 					.row
+		// 						a
+		// 							.tab-container
+		// 								.grid_post
+		// 									&.medium:hover
+		// 										background-image: url($campus-image) !important
+		// 		&.active
+		// 			.ui_linked_grid.ui_tabbed_grid
+		// 				.tab-content.ui_tabbed_grid_tabs
+		// 					.tab-pane.active
+		// 						.row
+		// 							a
+		// 								.tab-container
+		// 									.grid_post
+		// 										&.medium
+		// 											background-image: url($campus-image) !important
+		// 	#home-lg
+		// 		.ui_linked_grid.ui_tabbed_grid
+		// 			.tab-content.ui_tabbed_grid_tabs
+		// 				.tab-pane.active
+		// 					.row
+		// 						a
+		// 							.tab-container
+		// 								.grid_post
+		// 									&.medium:hover
+		// 										background-image: url($home-image) !important
+		// 		&.active
+		// 			.ui_linked_grid.ui_tabbed_grid
+		// 				.tab-content.ui_tabbed_grid_tabs
+		// 					.tab-pane.active
+		// 						.row
+		// 							a
+		// 								.tab-container
+		// 									.grid_post
+		// 										&.medium
+		// 											background-image: url($home-image) !important
