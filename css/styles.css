@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Quattrocento:400,700|Roboto+Slab:400");
-@import url("https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Arvo:400,400i,700,700i&display=swap");
 body #main-content .container {
   margin-top: 1.5rem;
   margin-bottom: 1rem; }
@@ -84,7 +84,8 @@ body #main-content #lp-nav {
           background-color: none;
           flex-direction: row;
           flex-wrap: wrap;
-          margin-top: 0; } }
+          margin-top: 0;
+          margin-left: -15px; } }
       body #main-content #lp-nav .container ul li {
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); }
@@ -105,5 +106,154 @@ body #main-content #lp-nav {
               padding: 17px 16px; } }
           body #main-content #lp-nav .container ul li a:hover {
             background-color: #41215E; }
+
+#main-content #main #infographics {
+  font-family: "Lato", sans-serif;
+  font-size: 12pt;
+  font-weight: 300; }
+  #main-content #main #infographics .row {
+    margin: 3% 0;
+    padding: 0;
+    text-align: center; }
+    #main-content #main #infographics .row:nth-child(1) {
+      margin: 2% 0 0; }
+  #main-content #main #infographics ul {
+    margin: 0;
+    padding: 0; }
+    #main-content #main #infographics ul li {
+      list-style-type: none; }
+  #main-content #main #infographics strong {
+    font-weight: 600; }
+  #main-content #main #infographics .degreeinventory {
+    color: white;
+    background-image: linear-gradient(0deg, #592a8a 12.5%, #42145f 12.5%, #42145f 50%, #592a8a 50%, #592a8a 62.5%, #42145f 62.5%, #42145f 100%);
+    background-size: 16pt 13pt;
+    margin: 0 auto 5%;
+    padding: 5% 0 2%; }
+    @media screen and (min-width: 768px) {
+      #main-content #main #infographics .degreeinventory {
+        padding: 2% 0; } }
+    #main-content #main #infographics .degreeinventory h4 {
+      color: #FFFFFF !important; }
+      @media screen and (min-width: 768px) {
+        #main-content #main #infographics .degreeinventory h4 {
+          font-size: 16pt !important; } }
+      @media screen and (min-width: 992px) {
+        #main-content #main #infographics .degreeinventory h4 {
+          font-size: 18pt !important; } }
+    #main-content #main #infographics .degreeinventory ul li {
+      font-size: 12pt; }
+      @media screen and (min-width: 768px) {
+        #main-content #main #infographics .degreeinventory ul li {
+          font-size: 10pt; } }
+      #main-content #main #infographics .degreeinventory ul li:nth-child(odd) {
+        font-size: 40pt;
+        font-weight: 900;
+        background: -webkit-linear-gradient(#FEC923, #592a8a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 28pt; }
+      #main-content #main #infographics .degreeinventory ul li:nth-child(even) {
+        font-weight: bold;
+        margin-top: -1%;
+        margin-bottom: 4%;
+        line-height: 10pt; }
+        @media screen and (min-width: 768px) {
+          #main-content #main #infographics .degreeinventory ul li:nth-child(even) {
+            margin-top: -6%; } }
+        @media screen and (min-width: 1200px) {
+          #main-content #main #infographics .degreeinventory ul li:nth-child(even) {
+            margin-top: -5%; } }
+      #main-content #main #infographics .degreeinventory ul li:nth-last-child(1) span {
+        font-size: 8pt;
+        line-height: 100%;
+        display: block; }
+        @media screen and (min-width: 992px) {
+          #main-content #main #infographics .degreeinventory ul li:nth-last-child(1) span {
+            padding: 0px 3%; } }
+  @media screen and (min-width: 992px) {
+    #main-content #main #infographics .enrollmentprograms {
+      font-size: 10pt; } }
+  @media screen and (min-width: 1200px) {
+    #main-content #main #infographics .enrollmentprograms {
+      font-size: 12pt; } }
+  #main-content #main #infographics .enrollmentprograms .bargraph {
+    margin-top: -3%; }
+  #main-content #main #infographics .enrollmentprograms .graph {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 65%;
+    left: 95pt; }
+    @media screen and (min-width: 992px) {
+      #main-content #main #infographics .enrollmentprograms .graph {
+        left: 95pt; } }
+  #main-content #main #infographics .enrollmentprograms .graph-bar {
+    background-color: #592a8a;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    position: relative;
+    display: block;
+    margin: 1% 0;
+    line-height: 15pt; }
+    #main-content #main #infographics .enrollmentprograms .graph-bar:hover {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      background: #42145F; }
+    #main-content #main #infographics .enrollmentprograms .graph-bar:last-child {
+      margin-bottom: 0; }
+  #main-content #main #infographics .enrollmentprograms .graph-legend {
+    width: 100pt;
+    text-align: right;
+    display: block;
+    font-size: 8pt;
+    font-weight: bold;
+    position: relative;
+    left: -110pt; }
+  #main-content #main #infographics .enrollmentprograms ul.increments {
+    display: flex;
+    justify-content: space-evenly;
+    width: 65%;
+    position: relative;
+    left: 100pt; }
+    @media screen and (min-width: 768px) {
+      #main-content #main #infographics .enrollmentprograms ul.increments {
+        letter-spacing: -1pt; } }
+    @media screen and (min-width: 992px) {
+      #main-content #main #infographics .enrollmentprograms ul.increments {
+        letter-spacing: 0; } }
+    #main-content #main #infographics .enrollmentprograms ul.increments li {
+      display: inline-block;
+      font-size: 8pt;
+      font-weight: 300; }
+      #main-content #main #infographics .enrollmentprograms ul.increments li:nth-last-child(1) {
+        display: block;
+        position: absolute;
+        margin-top: 10pt; }
+        @media screen and (min-width: 768px) {
+          #main-content #main #infographics .enrollmentprograms ul.increments li:nth-last-child(1) {
+            letter-spacing: 0; } }
+        #main-content #main #infographics .enrollmentprograms ul.increments li:nth-last-child(1)::before {
+          display: none; }
+#main-content #main #studyabroad-graphic {
+  background-color: #592a8a;
+  color: #FFFFFF;
+  text-align: center; }
+  #main-content #main #studyabroad-graphic .row {
+    align-items: center;
+    padding: 1em; }
+  #main-content #main #studyabroad-graphic span {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    color: #FEC923;
+    font-size: 300%;
+    display: block;
+    letter-spacing: 0.0625em;
+    line-height: 1.25; }
 
 /*# sourceMappingURL=styles.css.map */

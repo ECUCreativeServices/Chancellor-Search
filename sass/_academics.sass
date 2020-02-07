@@ -1,0 +1,143 @@
+#main-content
+	#main
+		#infographics
+			font-family: $lato
+			font-size: 12pt
+			font-weight: 300
+			.row
+				margin: 3% 0
+				padding: 0
+				text-align: center
+				&:nth-child(1)
+					margin: 2% 0 0
+			ul
+				margin: 0
+				padding: 0
+				li
+					list-style-type: none
+			strong
+				font-weight: 600
+
+			.degreeinventory
+				color: white
+				background-image: linear-gradient(0deg, $ecu-brand-purple 12.50%, #42145f 12.50%, #42145f 50%, $ecu-brand-purple 50%, $ecu-brand-purple 62.50%, #42145f 62.50%, #42145f 100%)
+				background-size: 16pt 13pt
+				margin: 0 auto 5%
+				padding: 5% 0 2%
+				@media screen and (min-width: $screen-md-min)
+					padding: 2% 0
+				h4
+					color: $white !important
+					@media screen and (min-width: $screen-md-min)
+						font-size: 16pt !important
+					@media screen and (min-width: $screen-lg-min)
+						font-size: 18pt !important
+				ul
+					li
+						font-size: 12pt
+						@media screen and (min-width: $screen-md-min)
+							font-size: 10pt
+						&:nth-child(odd)
+							font-size: 40pt
+							font-weight: 900
+							background: -webkit-linear-gradient($ecu-gold, $ecu-brand-purple)
+							-webkit-background-clip: text
+							-webkit-text-fill-color: transparent
+							line-height: 28pt
+						&:nth-child(even)
+							font-weight: bold
+							margin-top: -1%
+							margin-bottom: 4%
+							line-height: 10pt
+							@media screen and (min-width: $screen-md-min)
+								margin-top: -6%
+							@media screen and (min-width: $screen-xl-min)
+								margin-top: -5%
+						&:nth-last-child(1)
+							span
+								font-size: 8pt
+								line-height: 100%
+								display: block
+								@media screen and (min-width: $screen-lg-min)
+									padding: 0px 3%
+
+			.enrollmentprograms
+				@media screen and (min-width: $screen-lg-min)
+					font-size: 10pt
+				@media screen and (min-width: $screen-xl-min)
+					font-size: 12pt
+				.bargraph
+					margin-top: -3%
+				.graph
+					position: relative
+					list-style-type: none
+					padding: 0
+					margin: 0
+					width: 65%
+					left: 95pt
+					@media screen and (min-width: $screen-lg-min)
+						left: 95pt
+				.graph-bar
+					background-color: $ecu-brand-purple
+					-webkit-transition: all 1s ease-out
+					-moz-transition: all 1s ease-out
+					-o-transition: all 1s ease-out
+					transition: all 1s ease-out
+					position: relative
+					display: block
+					margin: 1% 0
+					line-height: 15pt
+					&:hover
+						-webkit-transition: all 0.5s ease
+						-moz-transition: all 0.5s ease
+						-o-transition: all 0.5s ease
+						transition: all 0.5s ease
+						background: #42145F
+					&:last-child
+						margin-bottom: 0
+				.graph-legend
+					width: 100pt
+					text-align: right
+					display: block
+					font-size: 8pt
+					font-weight: bold
+					position: relative
+					left: -110pt
+				ul.increments
+					display: flex
+					justify-content: space-evenly
+					width: 65%
+					position: relative
+					left: 100pt
+					@media screen and (min-width: $screen-md-min)
+						letter-spacing: -1pt
+					@media screen and (min-width: $screen-lg-min)
+						letter-spacing: 0
+					li
+						display: inline-block
+						font-size: 8pt
+						font-weight: 300
+						&:nth-last-child(1)
+							display: block
+							position: absolute
+							margin-top: 10pt
+							@media screen and (min-width: $screen-md-min)
+								letter-spacing: 0
+							&::before
+								display: none
+
+		#studyabroad-graphic
+			background-color: $ecu-brand-purple
+			color: $white
+			text-align: center
+			.row
+				align-items: center
+				padding: 1em
+			span
+				font-family: $heading-font
+				font-weight: bold
+				color: $ecu-gold
+				font-size: 300%
+				display: block
+				letter-spacing: 0.0625em
+				line-height: 1.25
