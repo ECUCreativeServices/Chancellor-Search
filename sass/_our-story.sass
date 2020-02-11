@@ -25,8 +25,10 @@
 					margin-bottom: inherit
 				@media screen and (min-width: $screen-md-min)
 					min-height: 12rem
+					margin-bottom: 3rem
 				@media screen and (min-width: $screen-lg-min)
 					min-height: 15rem
+					margin-bottom: 3.5rem
 				@media screen and (min-width: $screen-xl-min)
 					min-height: 16rem
 				h3
@@ -48,10 +50,13 @@
 						padding: 0
 						margin: 0
 					@media screen and (min-width: $screen-md-min)
-						top: 33%
+						top: 32%
 						left: 22%
 					@media screen and (min-width: $screen-lg-min)
 						top: 28%
+						left: 21%
+					@media screen and (min-width: $screen-xl-min)
+						top: 26%
 						left: 15%
 					span
 						font-family: $arvo-heading
@@ -62,9 +67,11 @@
 						@media screen and (min-width: $screen-sm-min)
 							line-height: 1.5
 						@media screen and (min-width: $screen-md-min)
-							font-size: 2.08em
+							font-size: 2.5em
 						@media screen and (min-width: $screen-lg-min)
 							font-size: 3.75em
+						@media screen and (min-width: $screen-xl-min)
+							font-size: 4.25em
 					p
 						font-size: 1.17em
 						text-transform: capitalize
@@ -77,10 +84,14 @@
 							left: 105%
 							background: $ecu-brand-purple
 						@media screen and (min-width: $screen-md-min)
-							left: 105%
+							top: -22%
 							font-size: 1em
 						@media screen and (min-width: $screen-lg-min)
-							font-size: 1.17em
+							font-size: 1.04em
+							top: 0
+						@media screen and (min-width: $screen-xl-min)
+							font-size: 1.1em
+							top: 4%
 						strong
 							text-transform: lowercase
 				p
@@ -96,11 +107,10 @@
 						margin-top: 1em
 						text-align: center
 					@media screen and (min-width: $screen-md-min)
-						top: 50%
-						font-size: 0.67em
-					@media screen and (min-width: $screen-lg-min)
-						top: 70%
+						top: 78%
 						font-size: 1em
+					@media screen and (min-width: $screen-lg-min)
+						font-size: 1.125em
 					@media screen and (min-width: $screen-xl-min)
 						font-size: 1.33em
 					span
@@ -108,9 +118,7 @@
 						font-size: 1.83em
 						vertical-align: top
 						@media screen and (min-width: $screen-md-min)
-							font-size: 1em
-						@media screen and (min-width: $screen-lg-min)
-							font-size: 1.83em
+							font-size: 1.6em
 
 			.ecustudentsrepresent
 				padding: 0
@@ -146,7 +154,6 @@
 								font-weight: 800
 				.represent-pie
 					color: $ecu-brand-purple
-					// position: absolute
 					text-align: center
 					text-transform: uppercase
 					p
@@ -170,28 +177,24 @@
 						margin: -2em 0 auto
 						font-size: 1.5em
 						@media screen and (min-width: $screen-md-min)
-							margin: -24% 0 3%
+							margin-top: -24%
 							font-size: 1.17em
 						@media screen and (min-width: $screen-lg-min)
-							margin: -18% 0 3%
+							margin: -20% 0 3%
 						@media screen and (min-width: $screen-xl-min)
-							margin: -15% 0 3%
-							font-size: 1.17em
+							margin: -18% 0 -4%
 					span
 						font-size: 1.5em
 						font-weight: 900
 						display: block
 				#out-state
-					// top: 16%
-					// left: 38%
+					@media screen and (min-width: $screen-xl-min)
+						position: relative
+						left: 10%
 				#in-state
-					// top: 45%
-					// left: 61%
-					// @media screen and (min-width: $screen-sm-min)
-					// 	top: 25%
-					// 	left: 61%
-					// @media screen and (min-width: $screen-xl-min)
-					// 	top: 25%
-					// 	left: 61%
+					@media screen and (min-width: $screen-md-min)
+						position: relative
+						top: 10%
+						right: 35%
 					strong
 						color: $ecu-gold

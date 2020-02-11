@@ -3,79 +3,66 @@
 		#infographics
 			background-color: $ecu-brand-purple
 			font-family: $lato
-			font-size: 12pt
+			font-size: 1em
 			font-weight: 300
 			color: $white
+			padding: 1.5em 1em 1em
 			.row
-				margin: 3% 0
 				padding: 0
 				text-align: center
-				&:nth-child(1)
-					margin: 2% 0 0
-			ul
+			ol
 				margin: 0
 				padding: 0
 				li
 					list-style-type: none
 			strong
 				font-weight: 600
+			h4
+				color: $white
+				font-size: 2em !important
 
 			.degreeinventory
-				margin: 0 auto 5%
-				padding: 5% 0 2%
+				margin: 0 auto 2em
+				font-size: 1em
 				@media screen and (min-width: $screen-md-min)
-					padding: 2% 0
-				h4
-					color: $white !important
+					font-size: 0.9em
+					padding-right: 3.25em
+					margin-bottom: 0
+				@media screen and (min-width: $screen-xl-min)
+					padding-right: 15px
+				span
+					font-size: 3.33em
+					font-weight: 900
+					background: -webkit-linear-gradient($ecu-gold, $ecu-brand-purple)
+					-webkit-background-clip: text
+					-webkit-text-fill-color: transparent
+					line-height: .8
+					display: block
+				p
+					font-weight: bold
+					line-height: 0.9em
+					margin-bottom: 0.5em
 					@media screen and (min-width: $screen-md-min)
-						font-size: 16pt !important
-					@media screen and (min-width: $screen-lg-min)
-						font-size: 18pt !important
-				ul
-					li
-						font-size: 12pt
-						@media screen and (min-width: $screen-md-min)
-							font-size: 10pt
-						&:nth-child(odd)
-							font-size: 40pt
-							font-weight: 900
-							background: -webkit-linear-gradient($ecu-gold, $ecu-brand-purple)
-							-webkit-background-clip: text
-							-webkit-text-fill-color: transparent
-							line-height: 28pt
-						&:nth-child(even)
-							font-weight: bold
-							margin-top: -1%
-							margin-bottom: 4%
-							line-height: 10pt
-							@media screen and (min-width: $screen-md-min)
-								margin-top: -6%
-							@media screen and (min-width: $screen-xl-min)
-								margin-top: -5%
-						&:nth-last-child(1)
-							span
-								font-size: 8pt
-								line-height: 100%
-								display: block
-								@media screen and (min-width: $screen-lg-min)
-									padding: 0px 3%
+						margin-bottom: 1em
+					small
+						display: block
 
 			.enrollmentprograms
 				@media screen and (min-width: $screen-lg-min)
-					font-size: 10pt
+					font-size: 0.83em
 				@media screen and (min-width: $screen-xl-min)
-					font-size: 12pt
+					font-size: 1em
 				.bargraph
-					margin-top: -3%
+					margin-bottom: 1.5em
 				.graph
 					position: relative
 					list-style-type: none
 					padding: 0
 					margin: 0
-					width: 65%
-					left: 95pt
-					@media screen and (min-width: $screen-lg-min)
-						left: 95pt
+					width: 70%
+					left: 30%
+					@media screen and (min-width: $screen-sm-min)
+						left: 29%
 				.graph-bar
 					background-color: $ecu-gold
 					-webkit-transition: all 1s ease-out
@@ -85,7 +72,7 @@
 					position: relative
 					display: block
 					margin: 1% 0
-					line-height: 15pt
+					line-height: 1.25em
 					&:hover
 						-webkit-transition: all 0.5s ease
 						-moz-transition: all 0.5s ease
@@ -95,40 +82,41 @@
 					&:last-child
 						margin-bottom: 0
 				.graph-legend
-					width: 100pt
+					width: 8.5em
 					text-align: right
 					display: block
-					font-size: 8pt
+					font-size: 0.67em
 					font-weight: bold
 					position: relative
-					left: -110pt
-				ul.increments
+					left: -9.25em
+					@media screen and (min-width: $screen-sm-min)
+						width: 11em
+						left: -11.75em
+				ol.increments
 					display: flex
 					justify-content: space-evenly
-					width: 65%
+					width: 70%
 					position: relative
-					left: 100pt
-					@media screen and (min-width: $screen-md-min)
-						letter-spacing: -1pt
-					@media screen and (min-width: $screen-lg-min)
-						letter-spacing: 0
+					left: 30%
+					@media screen and (min-width: $screen-sm-min)
+						left: 29%
 					li
 						display: inline-block
-						font-size: 8pt
+						font-size: 0.67em
 						font-weight: 300
 						&:nth-last-child(1)
 							display: block
 							position: absolute
-							margin-top: 10pt
-							@media screen and (min-width: $screen-md-min)
-								letter-spacing: 0
-							&::before
-								display: none
+							margin-top: 1em
+							@media screen and (min-width: $screen-sm-min)
+								margin-top: 1.25em
 
 		#studyabroad-graphic
 			background-color: $ecu-brand-purple
 			color: $white
 			text-align: center
+			font-style: italic
+			line-height: 1.25
 			.row
 				align-items: center
 				padding: 1em
@@ -139,4 +127,9 @@
 				font-size: 300%
 				display: block
 				letter-spacing: 0.0625em
-				line-height: 1.25
+				line-height: 1.125
+				font-style: normal
+				position: relative
+				top: -3%
+			img
+				margin: 6px auto

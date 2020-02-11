@@ -107,216 +107,46 @@ body #main-content #lp-nav {
           body #main-content #lp-nav .container ul li a:hover {
             background-color: #41215E; }
 
-#main-content #main #infographics {
-  font-family: "Lato", sans-serif;
-  font-size: 1em;
-  font-weight: 300; }
-  #main-content #main #infographics .row {
-    padding: 0;
-    text-align: center; }
-  #main-content #main #infographics ul {
-    margin: 0;
-    padding: 0; }
-    #main-content #main #infographics ul li {
-      list-style-type: none; }
-  #main-content #main #infographics strong {
-    font-weight: 600; }
-  #main-content #main #infographics .enrollment {
-    padding: 0;
-    margin-bottom: 1em; }
-    @media screen and (min-width: 576px) {
-      #main-content #main #infographics .enrollment {
-        background: url(https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/Enrollment.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        min-height: 20rem;
-        margin-bottom: inherit; } }
-    @media screen and (min-width: 768px) {
-      #main-content #main #infographics .enrollment {
-        min-height: 12rem; } }
-    @media screen and (min-width: 992px) {
-      #main-content #main #infographics .enrollment {
-        min-height: 15rem; } }
-    @media screen and (min-width: 1200px) {
-      #main-content #main #infographics .enrollment {
-        min-height: 16rem; } }
-    #main-content #main #infographics .enrollment h3 {
-      text-align: left; }
-      @media screen and (min-width: 576px) {
-        #main-content #main #infographics .enrollment h3 {
-          text-align: center; } }
-    #main-content #main #infographics .enrollment #total {
-      text-align: left;
-      background-color: #572C86;
-      color: #FEC923;
-      padding: 10px 15px 5px;
-      margin-bottom: 0.5em; }
-      @media screen and (min-width: 576px) {
-        #main-content #main #infographics .enrollment #total {
-          background: none;
-          position: absolute;
-          top: 20%;
-          left: 15%;
-          text-align: center;
-          padding: 0;
-          margin: 0; } }
-      @media screen and (min-width: 768px) {
-        #main-content #main #infographics .enrollment #total {
-          top: 33%;
-          left: 22%; } }
-      @media screen and (min-width: 992px) {
-        #main-content #main #infographics .enrollment #total {
-          top: 28%;
-          left: 15%; } }
-      #main-content #main #infographics .enrollment #total span {
-        font-family: "Arvo", sans-serif;
-        font-size: 5em;
-        font-weight: 700;
-        padding: 0;
-        line-height: 1; }
-        @media screen and (min-width: 576px) {
-          #main-content #main #infographics .enrollment #total span {
-            line-height: 1.5; } }
-        @media screen and (min-width: 768px) {
-          #main-content #main #infographics .enrollment #total span {
-            font-size: 2.08em; } }
-        @media screen and (min-width: 992px) {
-          #main-content #main #infographics .enrollment #total span {
-            font-size: 3.75em; } }
-      #main-content #main #infographics .enrollment #total p {
-        font-size: 1.17em;
-        text-transform: capitalize;
-        line-height: 1.0625;
-        color: #FEC923;
-        text-align: left; }
-        @media screen and (min-width: 576px) {
-          #main-content #main #infographics .enrollment #total p {
-            position: absolute;
-            top: 10%;
-            left: 105%;
-            background: #592a8a; } }
-        @media screen and (min-width: 768px) {
-          #main-content #main #infographics .enrollment #total p {
-            left: 105%;
-            font-size: 1em; } }
-        @media screen and (min-width: 992px) {
-          #main-content #main #infographics .enrollment #total p {
-            font-size: 1.17em; } }
-        #main-content #main #infographics .enrollment #total p strong {
-          text-transform: lowercase; }
-    #main-content #main #infographics .enrollment p {
-      color: #592a8a;
-      font-size: 1em;
-      text-transform: uppercase;
-      text-align: left; }
-      @media screen and (min-width: 576px) {
-        #main-content #main #infographics .enrollment p {
-          position: relative;
-          top: 68%;
-          top: 65%;
-          font-size: 1.33em;
-          margin-top: 1em;
-          text-align: center; } }
-      @media screen and (min-width: 768px) {
-        #main-content #main #infographics .enrollment p {
-          top: 50%;
-          font-size: 0.67em; } }
-      @media screen and (min-width: 992px) {
-        #main-content #main #infographics .enrollment p {
-          top: 70%;
-          font-size: 1em; } }
-      @media screen and (min-width: 1200px) {
-        #main-content #main #infographics .enrollment p {
-          font-size: 1.33em; } }
-      #main-content #main #infographics .enrollment p span {
-        font-weight: 600;
-        font-size: 1.83em;
-        vertical-align: top; }
-        @media screen and (min-width: 768px) {
-          #main-content #main #infographics .enrollment p span {
-            font-size: 1em; } }
-        @media screen and (min-width: 992px) {
-          #main-content #main #infographics .enrollment p span {
-            font-size: 1.83em; } }
-  #main-content #main #infographics .ecustudentsrepresent {
-    padding: 0; }
-    @media screen and (min-width: 768px) {
-      #main-content #main #infographics .ecustudentsrepresent {
-        background: url(https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/Students-Represent_no-chart.svg);
-        background-repeat: no-repeat;
-        background-size: 66%;
-        background-position: top right;
-        height: 13.33em; } }
-    @media screen and (min-width: 1200px) {
-      #main-content #main #infographics .ecustudentsrepresent {
-        background-size: 60%;
-        background-position: top right;
-        padding: 0; } }
-    #main-content #main #infographics .ecustudentsrepresent h3 {
-      text-align: left; }
-    #main-content #main #infographics .ecustudentsrepresent ul {
-      text-align: left; }
-      #main-content #main #infographics .ecustudentsrepresent ul li {
-        margin-bottom: 0.5em;
-        font-size: 1.17em; }
-        @media screen and (min-width: 768px) {
-          #main-content #main #infographics .ecustudentsrepresent ul li {
-            font-size: 0.92em; } }
-        @media screen and (min-width: 1200px) {
-          #main-content #main #infographics .ecustudentsrepresent ul li {
-            font-size: 1.17em; } }
-        #main-content #main #infographics .ecustudentsrepresent ul li span {
-          color: #592a8a;
-          display: inline-block;
-          font-weight: 800; }
-          @media screen and (min-width: 768px) {
-            #main-content #main #infographics .ecustudentsrepresent ul li span {
-              display: block; } }
-        #main-content #main #infographics .ecustudentsrepresent ul li strong {
-          color: #592a8a;
-          font-weight: 800; }
-    #main-content #main #infographics .ecustudentsrepresent .represent-pie {
-      color: #592a8a;
-      text-align: center;
-      text-transform: uppercase; }
-      #main-content #main #infographics .ecustudentsrepresent .represent-pie p {
-        font-size: 0.9em;
-        font-weight: bold;
-        line-height: 1.25em; }
-        @media screen and (min-width: 768px) {
-          #main-content #main #infographics .ecustudentsrepresent .represent-pie p {
-            font-size: 0.67em; } }
-      #main-content #main #infographics .ecustudentsrepresent .represent-pie img {
-        width: 75%;
-        max-width: 150px;
-        display: block;
-        margin: 0 auto;
-        border: #FFFFFF solid 1px;
-        border-radius: 50%;
-        padding: 0; }
-        @media screen and (min-width: 576px) {
-          #main-content #main #infographics .ecustudentsrepresent .represent-pie img {
-            width: 50%; } }
-      #main-content #main #infographics .ecustudentsrepresent .represent-pie strong {
-        display: block;
-        margin: -2em 0 auto;
-        font-size: 1.5em; }
-        @media screen and (min-width: 768px) {
-          #main-content #main #infographics .ecustudentsrepresent .represent-pie strong {
-            margin: -24% 0 3%;
-            font-size: 1.17em; } }
-        @media screen and (min-width: 992px) {
-          #main-content #main #infographics .ecustudentsrepresent .represent-pie strong {
-            margin: -18% 0 3%; } }
-        @media screen and (min-width: 1200px) {
-          #main-content #main #infographics .ecustudentsrepresent .represent-pie strong {
-            margin: -15% 0 3%;
-            font-size: 1.17em; } }
-      #main-content #main #infographics .ecustudentsrepresent .represent-pie span {
-        font-size: 1.5em;
-        font-weight: 900;
-        display: block; }
-    #main-content #main #infographics .ecustudentsrepresent #in-state strong {
-      color: #FEC923; }
+#main-content #main #gallup, #main-content #main #campus-life {
+  background-color: #592a8a;
+  color: #FFFFFF; }
+  #main-content #main #gallup .row, #main-content #main #campus-life .row {
+    padding: 1em; }
+  #main-content #main #gallup span, #main-content #main #campus-life span {
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    color: #FEC923;
+    font-size: 300%;
+    display: block;
+    letter-spacing: 0.0625em;
+    line-height: 1.25; }
+    #main-content #main #gallup span.right, #main-content #main #campus-life span.right {
+      text-align: right; }
+#main-content #main #campus-life {
+  text-align: left; }
+#main-content #main #gallup {
+  text-align: center;
+  margin-bottom: 1.5em; }
+  #main-content #main #gallup p {
+    font-style: italic; }
+    #main-content #main #gallup p span {
+      font-style: normal;
+      margin-bottom: 0.25em;
+      margin-top: 0.5em; }
+#main-content #main #leadership {
+  text-align: center;
+  margin-bottom: 0.5em; }
+#main-content #main #engagement .row {
+  display: flex;
+  align-items: center; }
+#main-content #main #engagement .numbers {
+  text-align: right;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  color: #572C86;
+  font-size: 300%;
+  letter-spacing: 0.0625em; }
+#main-content #main #engagement .text {
+  font-style: italic; }
 
 /*# sourceMappingURL=styles.css.map */
