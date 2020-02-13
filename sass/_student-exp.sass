@@ -13,10 +13,9 @@
 				display: block
 				letter-spacing: 0.0625em
 				line-height: 1.25
+				font-style: normal
 				&.right
 					text-align: right
-		#campus-life
-			text-align: left
 		#gallup
 			text-align: center
 			margin-bottom: 1.5em
@@ -29,16 +28,98 @@
 		#leadership
 			text-align: center
 			margin-bottom: 0.5em
+			font-style: italic
+		#campus-life
+			text-align: center
+			margin-bottom: 1.5em
+			font-style: italic
+			@media screen and (min-width: $screen-lg-min)
+				text-align: left
+				padding-right: 1.5em
+			span.right
+				text-align: center
+				@media screen and (min-width: $screen-lg-min)
+					text-align: right
+			.large
+				@media screen and (min-width: $screen-lg-min)
+					font-size: 365%
+				@media screen and (min-width: $screen-xl-min)
+					font-size: 450%
+			.centered
+				text-align: center
+				span
+					position: relative
+					top: 4%
+					@media screen and (min-width: $screen-lg-min)
+						top: 12%
+					@media screen and (min-width: $screen-xl-min)
+						top: 4%
+			p
+				position: relative
+			#investment
+				@media screen and (min-width: $screen-lg-min)
+					top: 30%
+					padding-left: 0.5em
+				@media screen and (min-width: $screen-xl-min)
+					top: 38%
+			#gateway-text
+				@media screen and (min-width: $screen-lg-min)
+					top: 16%
+					padding-left: 0.5em
+				@media screen and (min-width: $screen-xl-min)
+					top: 21%
+			#gateway-span
+				@media screen and (min-width: $screen-lg-min)
+					position: relative
+					left: 9%
+					top: 24%
+			#high-rise
+					top: -6%
+					@media screen and (min-width: $screen-lg-min)
+						top: 4%
+					@media screen and (min-width: $screen-xl-min)
+						top: -6%
 		#engagement
 			.row
 				display: flex
 				align-items: center
 			.numbers
-				text-align: right
+				text-align: center
 				font-family: $heading-font
 				font-weight: bold
 				color: $ecu-purple
-				font-size: 300%
+				font-size: 250%
 				letter-spacing: 0.0625em
+				@media screen and (min-width: $screen-sm-min)
+					text-align: right
+				@media screen and (min-width: $screen-md-min)
+					text-align: left
+				@media screen and (min-width: $screen-lg-min)
+					text-align: right
+					font-size: 228%
+				@media screen and (min-width: $screen-xl-min)
+					font-size: 250%
 			.text
 				font-style: italic
+				color: $ecu-purple
+				line-height: 1.25
+				text-align: center
+				@media screen and (min-width: $screen-sm-min)
+					padding-left: 1em
+					padding-top: 0.325em
+					text-align: left
+				@media screen and (min-width: $screen-md-min)
+					padding-top: 0
+					padding-left: 0
+				@media screen and (min-width: $screen-lg-min)
+					padding-top: 0.325em
+					padding-left: 1em
+		#student-img
+			@media screen and (min-width: $screen-sm-min)
+				background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/Campus_Photos-8899.jpg")
+				background-size: cover
+				background-position: center
+				height: 14em
+				margin-top: 1em
+			@media screen and (min-width: $screen-md-min)
+				height: 100%

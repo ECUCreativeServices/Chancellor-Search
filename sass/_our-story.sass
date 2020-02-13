@@ -1,5 +1,18 @@
 #main-content
 	#main
+		#today-img, #building-img
+			@media screen and (min-width: $screen-sm-min)
+				background-size: cover
+				background-position: center
+				height: 12em
+			@media screen and (min-width: $screen-lg-min)
+				height: 100%
+		#today-img
+			@media screen and (min-width: $screen-sm-min)
+				background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/Orientation-3842.jpg")
+		#building-img
+			@media screen and (min-width: $screen-sm-min)
+				background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/Student_Center-9726.jpg")
 		#infographics
 			font-family: $lato
 			font-size: 1em

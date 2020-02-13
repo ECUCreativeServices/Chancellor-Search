@@ -54,99 +54,65 @@ body #main-content .sidebar {
           padding: 0;
           margin: 0; }
 
-body #main-content #lp-nav {
-  display: flex;
-  align-items: center; }
-  @media screen and (min-width: 768px) {
-    body #main-content #lp-nav {
-      background-color: #572C86;
-      position: sticky;
-      top: 117px;
-      z-index: 1019; } }
-  @media screen and (min-width: 992px) {
-    body #main-content #lp-nav {
-      top: 153px; } }
-  @media screen and (min-width: 1200px) {
-    body #main-content #lp-nav {
-      top: 129px; } }
-  body #main-content #lp-nav .container {
-    margin: 0 auto; }
-    body #main-content #lp-nav .container ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-      background-color: #572C86;
-      margin-top: 1.5em; }
-      @media screen and (min-width: 768px) {
-        body #main-content #lp-nav .container ul {
-          background-color: none;
-          flex-direction: row;
-          flex-wrap: wrap;
-          margin-top: 0;
-          margin-left: -15px; } }
-      body #main-content #lp-nav .container ul li {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); }
-        @media screen and (min-width: 768px) {
-          body #main-content #lp-nav .container ul li {
-            border-bottom: none;
-            box-shadow: none; } }
-        body #main-content #lp-nav .container ul li a {
-          color: #FFFFFF;
-          font-family: "Oswald", sans-serif;
-          transition: color 0.2s;
-          font-size: 1rem;
-          border: 0 !important;
-          padding: 10px 15px;
-          display: block; }
-          @media screen and (min-width: 768px) {
-            body #main-content #lp-nav .container ul li a {
-              padding: 17px 16px; } }
-          body #main-content #lp-nav .container ul li a:hover {
-            background-color: #41215E; }
-
-#main-content #main #gallup, #main-content #main #campus-life {
-  background-color: #592a8a;
-  color: #FFFFFF; }
-  #main-content #main #gallup .row, #main-content #main #campus-life .row {
-    padding: 1em; }
-  #main-content #main #gallup span, #main-content #main #campus-life span {
-    font-family: "Oswald", sans-serif;
-    font-weight: bold;
-    color: #FEC923;
-    font-size: 300%;
-    display: block;
-    letter-spacing: 0.0625em;
-    line-height: 1.25; }
-    #main-content #main #gallup span.right, #main-content #main #campus-life span.right {
-      text-align: right; }
-#main-content #main #campus-life {
-  text-align: left; }
-#main-content #main #gallup {
-  text-align: center;
-  margin-bottom: 1.5em; }
-  #main-content #main #gallup p {
-    font-style: italic; }
-    #main-content #main #gallup p span {
-      font-style: normal;
-      margin-bottom: 0.25em;
-      margin-top: 0.5em; }
-#main-content #main #leadership {
-  text-align: center;
-  margin-bottom: 0.5em; }
-#main-content #main #engagement .row {
-  display: flex;
-  align-items: center; }
-#main-content #main #engagement .numbers {
-  text-align: right;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  color: #572C86;
-  font-size: 300%;
-  letter-spacing: 0.0625em; }
-#main-content #main #engagement .text {
-  font-style: italic; }
+body #main-content #procedure {
+  margin-top: 1em;
+  padding: 12px 16px;
+  font-size: 100%;
+  letter-spacing: 0.5px; }
+body #main-content .blocks-container {
+  margin-top: 0;
+  margin-bottom: 0; }
+body #main-content .lp-blocks {
+  margin: 0; }
+  body #main-content .lp-blocks .image-block {
+    padding: 0; }
+    body #main-content .lp-blocks .image-block.left, body #main-content .lp-blocks .image-block.right {
+      background-position: center;
+      background-size: cover;
+      min-height: 18em; }
+    @media screen and (min-width: 992px) {
+      body #main-content .lp-blocks .image-block.left::after {
+        content: "";
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #FFFFFF;
+        top: 50%;
+        right: 0; } }
+    @media screen and (min-width: 992px) {
+      body #main-content .lp-blocks .image-block.right::after {
+        content: "";
+        position: absolute;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid #FFFFFF;
+        top: 50%;
+        left: 0; } }
+  body #main-content .lp-blocks #story {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/our-story.jpg"); }
+  body #main-content .lp-blocks #coastal {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/rural-coastal.jpg"); }
+  body #main-content .lp-blocks #academics {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/academics-1.jpg"); }
+  body #main-content .lp-blocks #innovation {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/innovation.jpg"); }
+  body #main-content .lp-blocks #student-exp {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/student-experience.jpg"); }
+  body #main-content .lp-blocks #athletics {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/athletics-1.jpg"); }
+  body #main-content .lp-blocks #chancellor {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/chancellor-1.jpg"); }
+  body #main-content .lp-blocks .text-block {
+    text-align: center;
+    padding: 1em 1.5em; }
+    @media screen and (min-width: 768px) {
+      body #main-content .lp-blocks .text-block {
+        padding: 2em 3em; } }
+    @media screen and (min-width: 992px) {
+      body #main-content .lp-blocks .text-block {
+        padding: 1.5em 2em 1em; } }
+    @media screen and (min-width: 1200px) {
+      body #main-content .lp-blocks .text-block {
+        padding: 3em; } }
 
 /*# sourceMappingURL=styles.css.map */
