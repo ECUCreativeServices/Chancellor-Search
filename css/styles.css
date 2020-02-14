@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Quattrocento:400,700|Roboto+Slab:400");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Arvo:400,400i,700,700i&display=swap");
+body #main-content li {
+  padding-bottom: 0.5em; }
 body #main-content .container {
   margin-top: 1.5rem;
   margin-bottom: 1rem; }
@@ -17,8 +19,6 @@ body #main-content .lp-section-head {
 body #main-content .intro {
   font-size: 1.25rem;
   line-height: 1.75rem; }
-body #main-content ul.committee li {
-  padding-bottom: 0.5em; }
 body #main-content .sidebar {
   margin-bottom: 0.75em;
   margin-top: 0.5em; }
@@ -54,65 +54,97 @@ body #main-content .sidebar {
           padding: 0;
           margin: 0; }
 
-body #main-content #procedure {
-  margin-top: 1em;
-  padding: 12px 16px;
-  font-size: 100%;
-  letter-spacing: 0.5px; }
-body #main-content .blocks-container {
-  margin-top: 0;
-  margin-bottom: 0; }
-body #main-content .lp-blocks {
-  margin: 0; }
-  body #main-content .lp-blocks .image-block {
-    padding: 0; }
-    body #main-content .lp-blocks .image-block.left, body #main-content .lp-blocks .image-block.right {
-      background-position: center;
-      background-size: cover;
-      min-height: 18em; }
-    @media screen and (min-width: 992px) {
-      body #main-content .lp-blocks .image-block.left::after {
-        content: "";
-        position: absolute;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-right: 10px solid #FFFFFF;
-        top: 50%;
-        right: 0; } }
-    @media screen and (min-width: 992px) {
-      body #main-content .lp-blocks .image-block.right::after {
-        content: "";
-        position: absolute;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-left: 10px solid #FFFFFF;
-        top: 50%;
-        left: 0; } }
-  body #main-content .lp-blocks #story {
-    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/our-story.jpg"); }
-  body #main-content .lp-blocks #coastal {
-    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/rural-coastal.jpg"); }
-  body #main-content .lp-blocks #academics {
-    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/academics-1.jpg"); }
-  body #main-content .lp-blocks #innovation {
-    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/innovation.jpg"); }
-  body #main-content .lp-blocks #student-exp {
-    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/student-experience.jpg"); }
-  body #main-content .lp-blocks #athletics {
-    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/athletics-1.jpg"); }
-  body #main-content .lp-blocks #chancellor {
-    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/chancellor-1.jpg"); }
-  body #main-content .lp-blocks .text-block {
-    text-align: center;
-    padding: 1em 1.5em; }
-    @media screen and (min-width: 768px) {
-      body #main-content .lp-blocks .text-block {
-        padding: 2em 3em; } }
-    @media screen and (min-width: 992px) {
-      body #main-content .lp-blocks .text-block {
-        padding: 1.5em 2em 1em; } }
-    @media screen and (min-width: 1200px) {
-      body #main-content .lp-blocks .text-block {
-        padding: 3em; } }
+body #main-content #lp-nav {
+  display: flex;
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    body #main-content #lp-nav {
+      background-color: #572C86;
+      position: sticky;
+      top: 117px;
+      z-index: 1019; } }
+  @media screen and (min-width: 992px) {
+    body #main-content #lp-nav {
+      top: 153px; } }
+  @media screen and (min-width: 1200px) {
+    body #main-content #lp-nav {
+      top: 129px; } }
+  body #main-content #lp-nav .container {
+    margin: 0 auto; }
+    body #main-content #lp-nav .container ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      background-color: #572C86;
+      margin-top: 1.5em; }
+      @media screen and (min-width: 768px) {
+        body #main-content #lp-nav .container ul {
+          background-color: none;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-top: 0;
+          margin-left: -15px; } }
+      body #main-content #lp-nav .container ul li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+        padding-bottom: 0; }
+        @media screen and (min-width: 768px) {
+          body #main-content #lp-nav .container ul li {
+            border-bottom: none;
+            box-shadow: none; } }
+        body #main-content #lp-nav .container ul li a {
+          color: #FFFFFF;
+          font-family: "Oswald", sans-serif;
+          transition: color 0.2s;
+          font-size: 1rem;
+          border: 0 !important;
+          padding: 10px 15px;
+          display: block; }
+          @media screen and (min-width: 768px) {
+            body #main-content #lp-nav .container ul li a {
+              padding: 17px 16px; } }
+          body #main-content #lp-nav .container ul li a:hover {
+            background-color: #41215E; }
+
+#main-content #main p.small {
+  font-size: 80%;
+  font-weight: normal;
+  line-height: 1.6; }
+#main-content #main img.aligncenter {
+  display: none; }
+  @media screen and (min-width: 576px) {
+    #main-content #main img.aligncenter {
+      display: block;
+      margin: 1.5em auto; } }
+@media screen and (min-width: 576px) {
+  #main-content #main #white-coat, #main-content #main #naturalized, #main-content #main #cupola {
+    background-size: cover;
+    height: 14em; } }
+@media screen and (min-width: 992px) {
+  #main-content #main #white-coat, #main-content #main #naturalized, #main-content #main #cupola {
+    height: 100%; } }
+@media screen and (min-width: 576px) {
+  #main-content #main #white-coat {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/White_Coat_Interns-9.jpg");
+    background-position: center; } }
+@media screen and (min-width: 992px) {
+  #main-content #main #white-coat {
+    background-position: 65% center; } }
+@media screen and (min-width: 576px) {
+  #main-content #main #naturalized {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/Naturalization_ECHI-15.jpg");
+    background-position: center 25%; } }
+@media screen and (min-width: 992px) {
+  #main-content #main #naturalized {
+    background-position: center; } }
+@media screen and (min-width: 576px) {
+  #main-content #main #cupola {
+    background-image: url("https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/Admissions_Photos-4380.jpg");
+    background-position: center 48%; } }
+@media screen and (min-width: 992px) {
+  #main-content #main #cupola {
+    background-position: center; } }
 
 /*# sourceMappingURL=styles.css.map */

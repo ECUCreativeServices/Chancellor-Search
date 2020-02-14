@@ -17,6 +17,7 @@
 			font-family: $lato
 			font-size: 1em
 			font-weight: 300
+			margin-bottom: 0
 			.row
 				padding: 0
 				text-align: center
@@ -138,19 +139,16 @@
 				@media screen and (min-width: $screen-md-min)
 					background: url(https://chancellorsearch.ecu.edu/wp-content/pv-uploads/sites/237/2020/02/Students-Represent_no-chart.svg)
 					background-repeat: no-repeat
-					background-size: 66%
+					background-size: auto
 					background-position: top right
-					height: 13.33em
-				@media screen and (min-width: $screen-xl-min)
-					background-size: 60%
-					background-position: top right
-					padding: 0
+					height: 15em
+					padding-top: 1em
 				h3
 					text-align: left
 				ul
 					text-align: left
 					li
-						margin-bottom: .5em
+						padding-bottom: .5em
 						font-size: 1.17em
 						@media screen and (min-width: $screen-md-min)
 							font-size: 0.92em
@@ -201,13 +199,23 @@
 						font-weight: 900
 						display: block
 				#out-state
-					@media screen and (min-width: $screen-xl-min)
+					@media screen and (min-width: $screen-md-min)
 						position: relative
-						left: 10%
+						right: 6%
+					@media screen and (min-width: $screen-lg-min)
+						left: 5%
+						top: -10%
+					@media screen and (min-width: $screen-xl-min)
+						left: 18%
 				#in-state
 					@media screen and (min-width: $screen-md-min)
 						position: relative
 						top: 10%
-						right: 35%
+						right: 40%
+					@media screen and (min-width: $screen-lg-min)
+						top: 2%
+						right: 38%
+					@media screen and (min-width: $screen-xl-min)
+						right: 30%
 					strong
 						color: $ecu-gold
